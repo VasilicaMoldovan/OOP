@@ -1,0 +1,48 @@
+     1                                  bits 32
+     2                                  global start 
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  
+     6                                  segment data use32 class=data
+     7 00000000 326176624133                s1 db '2','a','v','b','A','3'
+     8 00000006 33646531                    S2 db  '3','d','e','1'
+     9                                      lens1 equ ($-s1)/2
+    10                                      lens2 equ $-S2
+    11 0000000A 00<rept>                    D times lens1+lens2 db 0
+    12                                  
+    13                                  ;Se dau doua siruri de caractere S1 si S2. Sa se construiasca sirul D prin concatenarea elementelor sirului S2 in ordine inversa cu elementele de pe pozitiile pare din sirul S1. 
+    14                                  segment code use32 class=code
+    15                                      start:
+    16 00000000 BE[09000000]                    mov ESI, S2 + lens2 - 1 ; punem in ESI sirul S2
+    17 00000005 BF[0A000000]                    mov EDI, D
+    18 0000000A B904000000                      mov ECX, lens2
+    19                                          repeat:
+    20 0000000F FD                                  std     ; DF = 1, parcurgem sirul S2 in ordine inversa
+    21 00000010 AC                                  lodsb   ; punem in AL byte-ul curent din S2
+    22                                                      ; ESI := ESI - 1
+    23 00000011 FC                                  cld     ; DF = 0, parcurgem sirul D de la stanga la dreapta
+    24 00000012 AA                                  stosb   ; mutam din AL in EDI(sirul D)
+    25                                                      ; EDI := EDI + 1
+    26 00000013 E2FA                                loop repeat     ; ECX := ECX - 1
+    27                                                              ; cmp ECX, 0
+    28                                                              ; ja repeat(daca ECX > 0 repetam ciclul)
+    29                                         
+    30                                          ;mov ESI, s1 + 1
+    31                                          ;mov ECX, lens1
+    32                                          ;cld         ; DF = 0, parcurgem sirul s1 de la stanga la dreapta
+    33                                          ;repeat1:
+    34                                              ;lodsb
+    35                                              ;inc ESI
+    36                                              ;stosb
+    37                                             ; mov AL, [ESI]
+    38                                             ; mov [EDI], AL
+    39                                              ;inc ESI
+    40                                              ;inc ESI
+    41                                             ; inc EDI
+    42                                              ;dec ECX
+    43                                              ;cmp ECX, 0
+    44                                              ;ja repeat1
+    45                                              ;loop repeat1
+    46                                              
+    47 00000015 6A00                            push    dword 0
+    48 00000017 FF15[00000000]                  call    [exit]

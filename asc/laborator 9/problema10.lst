@@ -1,0 +1,113 @@
+     1                                  bits 32 global start        
+     2                                  global start 
+     3                                  extern exit, printf, scanf               
+     4                                  import exit msvcrt.dll    
+     5                                  import printf msvcrt.dll 
+     6                                  import scanf msvcrt.dll 
+     7                                  
+     8                                  %include "function.asm"
+     1                              <1> bits 32
+     2                              <1> extern printf
+     3                              <1> import printf msvcrt.dll
+     4                              <1> segment data use32 class=data public 
+     5 00000000 00000000            <1>     len1 dd 0
+     6 00000004 00000000            <1>     len2 dd 0
+     7 00000008 74657374696E6700    <1>     testing db "testing", 0
+     8                              <1> 
+     9                              <1> segment code use32 class=code public 
+    10                              <1> function:
+    11 00000000 8B5C2410            <1>     mov ebx, [esp+16]
+    12 00000004 8B54240C            <1>     mov edx, [esp+12]
+    13 00000008 8A0B                <1>     mov cl, [ebx]
+    14 0000000A 8A02                <1>     mov al, [edx]
+    15 0000000C 68[08000000]        <1>     push dword testing
+    16 00000011 FF15[00000000]      <1>     call [printf]
+    17 00000017 83C404              <1>     add esp, 4
+    18                              <1>     repeta1:
+    19 0000001A 68[08000000]        <1>           push dword testing 
+    20 0000001F FF15[00000000]      <1>           call [printf]
+    21 00000025 83C404              <1>           add esp, 4
+    22                              <1>           
+    23 00000028 38C8                <1>           cmp al, cl
+    24 0000002A 7412                <1>           je fskip
+    25 0000002C FF05[04000000]      <1>           inc dword[len2]
+    26 00000032 C705[00000000]0000- <1>           mov dword[len1], 0
+    26 0000003A 0000                <1>
+    27 0000003C EB0C                <1>           jmp fskip2
+    28                              <1>           fskip:
+    29 0000003E FF05[00000000]      <1>             inc dword[len1]
+    30 00000044 FF05[04000000]      <1>             inc dword[len2]
+    31                              <1>           fskip2:
+    32 0000004A 8A82[00000000]      <1>           mov al, [edx+len1]
+    33 00000050 8A8B[04000000]      <1>           mov cl, [ebx+len2]
+    34 00000056 3C00                <1>           cmp al, 0
+    35 00000058 7407                <1>           je final 
+    36 0000005A 80F900              <1>           cmp cl, 0
+    37 0000005D 7408                <1>           je final2
+    38 0000005F EBB9                <1>           jmp repeta1
+    39                              <1>           
+    40                              <1>     final:
+    41 00000061 B801000000          <1>         mov eax, 1
+    42 00000066 C3                  <1>         ret
+    43                              <1>     final2:
+    44 00000067 B800000000          <1>         mov eax, 0
+    45 0000006C C3                  <1>         ret
+    46                              <1>         
+    47                              <1>         
+    48                              <1>           
+     9                                  segment data use32 class=data public 
+    10 00000010 00<rept>                    string1 times 100 db 0
+    11 00000074 00<rept>                    string2 times 100 db 0
+    12 000000D8 257300                      format db "%s", 0
+    13 000000DB 446100                      is db "Da", 0
+    14 000000DE 4E5500                      no db "NU", 0
+    15 000000E1 00000000                    n dd 0
+    16 000000E5 256400                      formatNumber db "%d", 0
+    17                                      
+    18                                  ;Se citeste de la tastatura un sir de numere in baza 10, cu semn. Sa se determine valoarea maxima din sir si sa se afiseze in fisierul max.txt (fisierul va fi creat) valoarea maxima, in baza 16.
+    19                                  segment code use32 class=code
+    20                                      start:
+    21 0000006D 68[E1000000]                    push dword n
+    22 00000072 68[E5000000]                    push dword formatNumber
+    23 00000077 FF15[00000000]                  call [scanf]
+    24 0000007D 83C408                          add esp, 4*2
+    25                                          
+    26 00000080 68[10000000]                    push dword string1
+    27 00000085 68[D8000000]                    push dword format
+    28 0000008A FF15[00000000]                  call [scanf]
+    29 00000090 83C408                          add esp, 4*2
+    30                                          
+    31 00000093 8B0D[E1000000]                  mov ecx, [n]
+    32 00000099 49                              dec ecx 
+    33 0000009A 51                              push ecx
+    34 0000009B 68[E5000000]                    push dword formatNumber
+    35 000000A0 FF15[00000000]                  call [printf]
+    36 000000A6 83C408                          add esp, 8
+    37                                          repeta:
+    38 000000A9 51                                  push ecx 
+    39 000000AA 68[74000000]                        push dword string2
+    40 000000AF 68[D8000000]                        push dword format
+    41 000000B4 FF15[00000000]                      call [scanf]
+    42 000000BA 83C408                              add esp, 4*2
+    43                                              
+    44 000000BD 68[10000000]                        push dword string1
+    45 000000C2 68[74000000]                        push dword string2
+    46 000000C7 E834FFFFFF                          call function
+    47 000000CC 83C408                              add esp, 4*2
+    48                                              
+    49 000000CF 83F800                              cmp eax, 0
+    50 000000D2 7410                                je skip
+    51 000000D4 68[DB000000]                        push dword is 
+    52 000000D9 FF15[00000000]                      call [printf]
+    53 000000DF 83C404                              add esp, 4*1
+    54 000000E2 EB0E                                jmp skip2
+    55                                              skip:
+    56 000000E4 68[DE000000]                            push dword no
+    57 000000E9 FF15[00000000]                          call [printf]
+    58 000000EF 83C404                                  add esp, 4*1
+    59                                              skip2:
+    60 000000F2 59                                      pop ecx 
+    61 000000F3 E2B4                                loop repeta
+    62                                          
+    63 000000F5 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    64 000000F7 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

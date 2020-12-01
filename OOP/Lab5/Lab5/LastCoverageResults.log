@@ -1,0 +1,21 @@
+[2019-04-17 08:25:39] [info] Start Program:
+Path:"C:\Users\Vasilica\Desktop\OOP\Lab5\Debug\Lab5.exe"
+Arguments:
+Working directory: "C:\Users\Vasilica\Desktop\OOP\Lab5\Lab5\"
+Modules: Selected: C:\Users\Vasilica\Desktop\OOP\Lab5\Debug\Lab5.exe Excluded: 
+Sources: Selected: C:\Users\Vasilica\Desktop\OOP\Lab5\Lab5 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Vasilica\AppData\Local\Temp\tczb2zm2.r5h 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2019-04-17 08:25:39] [info] Module: C:\Users\Vasilica\Desktop\OOP\Lab5\Debug\Lab5.exe is selected because it matches selected pattern: C:\Users\Vasilica\Desktop\OOP\Lab5\Debug\Lab5.exe
+[2019-04-17 08:25:40] [info] ----------------------------------------------------
+[2019-04-17 08:25:40] [info] Coverage binary generated in file: C:\Users\Vasilica\AppData\Local\Temp\tczb2zm2.r5h
+[2019-04-17 08:25:40] [info] ----------------------------------------------------

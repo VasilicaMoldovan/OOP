@@ -1,0 +1,46 @@
+     1                                  bits 32 
+     2                                  
+     3                                  ;Calculati (a * b + 2) / (a + 7 - c) + d + x
+     4                                  ;Interpretare cu semn
+     5                                  global start        
+     6                                  
+     7                                  extern exit              
+     8                                  import exit msvcrt.dll    
+     9                                                          
+    10                                  segment data use32 class=data
+    11 00000000 03                          a db 3
+    12 00000001 0800                        b dw 8
+    13 00000003 05                          c db 5
+    14 00000004 0F000000                    d dd 15
+    15 00000008 1400000000000000            x dq 20
+    16 00000010 00000000                    y dd 0
+    17                                     
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 A0[00000000]                    mov AL, [a]     ; AL = a
+    21 00000005 0407                            add AL, 7       ; AL = a + 7
+    22 00000007 2A05[03000000]                  sub AL, [c]     ; AL = a + 7 - c
+    23 0000000D 6698                            cbw             ; conversie cu semn de la AL la AX
+    24 0000000F 6689C3                          mov BX, AX      ; BX = a + 7 - c
+    25 00000012 A0[00000000]                    mov AL, [a]     ; AL = a
+    26 00000017 6698                            cbw             ; conversie cu semn de la AL la AX
+    27 00000019 66F72D[01000000]                imul word[b]    ; DX:AX = a * b
+    28 00000020 C705[10000000]0200-             mov dword[y], 2 ; y = 2
+    28 00000028 0000               
+    29 0000002A 660305[10000000]                add AX, word[y]
+    30 00000031 661315[10000000]                adc DX, word[y] ; DX:AX = a * b + 2
+    31                                          ; add AX, 2
+    32 00000038 66F7FB                          idiv BX         ; AX = (a * b + 2) / (a + 7 - c)
+    33 0000003B 6699                            cwd             ; conversie cu semn de la AX la DX:AX
+    34 0000003D 660305[04000000]                add AX, word[d]
+    35 00000044 661315[06000000]                adc DX, word[d + 2]    ; DX:AX = (a * b + 2) / (a + 7 - c) + d
+    36 0000004B 6650                            push AX
+    37 0000004D 6652                            push DX
+    38 0000004F 58                              pop EAX                ; EAX = (a * b + 2) / (a + 7 - c) + d
+    39 00000050 BA00000000                      mov EDX, 0
+    40 00000055 0305[08000000]                  add EAX, dword[x]
+    41 0000005B 1315[0A000000]                  adc EDX, dword[x + 2]    ; EDX:EAX = (a * b + 2) / (a + 7 - c) + d + x
+    42                                          
+    43                                          
+    44 00000061 6A00                            push    dword 0      
+    45 00000063 FF15[00000000]                  call    [exit]       

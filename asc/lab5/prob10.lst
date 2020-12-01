@@ -1,0 +1,42 @@
+     1                                  bits 32
+     2                                  global start 
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  
+     6                                  segment data use32 class=data
+     7 00000000 326176624133                s1 db '2','a','v','b','A','3'
+     8 00000006 33646531                    S2 db  '3','d','e','1'
+     9                                      lens1 equ ($-s1)/2
+    10                                      lens2 equ $-S2
+    11 0000000A 00<rept>                    D times lens1+lens2 db 0
+    12                                  
+    13                                  ;Se dau doua siruri de caractere S1 si S2. Sa se construiasca sirul D prin concatenarea elementelor sirului S2 in ordine inversa cu elementele de pe pozitiile pare din sirul S1. 
+    14                                  segment code use32 class=code
+    15                                      start:
+    16 00000000 BE[06000000]                    mov ESI, S2 ; punem in ESI sirul S2
+    17 00000005 BF[0A000000]                    mov EDI, D
+    18 0000000A B904000000                      mov ECX, lens2
+    19                                          repeat:
+    20 0000000F 8A06                                mov AL, [ESI]
+    21 00000011 4E                                  dec ESI
+    22 00000012 8807                                mov [EDI], AL
+    23 00000014 47                                  inc EDI
+    24 00000015 49                                  dec ECX
+    25 00000016 83F900                              cmp ECX, 0
+    26 00000019 77F4                                ja repeat
+    27                                         
+    28 0000001B BE[01000000]                    mov ESI, s1 + 1
+    29 00000020 B905000000                      mov ECX, lens1
+    30 00000025 FC                              cld         ; DF = 0, parcurgem sirul s1 de la stanga la dreapta
+    31                                          repeat1:
+    32 00000026 8A06                                mov AL, [ESI]
+    33 00000028 8807                                mov [EDI], AL
+    34 0000002A 46                                  inc ESI
+    35 0000002B 46                                  inc ESI
+    36 0000002C 47                                  inc EDI
+    37 0000002D 49                                  dec ECX
+    38 0000002E 83F900                              cmp ECX, 0
+    39 00000031 77F3                                ja repeat1
+    40                                              
+    41 00000033 6A00                            push    dword 0
+    42 00000035 FF15[00000000]                  call    [exit]

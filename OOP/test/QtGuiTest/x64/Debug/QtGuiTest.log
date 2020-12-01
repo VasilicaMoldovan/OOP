@@ -1,0 +1,10 @@
+﻿  Moc'ing QtGuiTest.h...
+  moc_QtGuiTest.cpp
+  QtGuiTest.cpp
+  controllerIllness.cpp
+  main.cpp
+  repoDisorders.cpp
+c:\users\vasilica\desktop\oop\qtguitest\qtguitest\repodisorders.cpp(85): error C2374: 'results': redefinition; multiple initialization
+  c:\users\vasilica\desktop\oop\qtguitest\qtguitest\repodisorders.cpp(83): note: see declaration of 'results'
+c:\users\vasilica\desktop\oop\qtguitest\qtguitest\repodisorders.cpp(87): error C2374: 'results': redefinition; multiple initialization
+  c:\users\vasilica\desktop\oop\qtguitest\qtguitest\repodisorders.cpp(83): note: see declaration of 'results'

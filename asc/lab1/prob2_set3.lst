@@ -1,0 +1,31 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ;Calculati d*(d+2*a)/(b*c)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  
+    12                                  segment data use32 class=data
+    13 00000000 02                              a db 2
+    14 00000001 03                              b db 3
+    15 00000002 04                              c db 4
+    16 00000003 2800                            d dw 40
+    17                                  
+    18                                  segment code use32 class=code
+    19                                      start:
+    20 00000000 B002                            mov AL, 2   ; AL = 2
+    21 00000002 F625[00000000]                  mul BYTE [a]    ; AX = AL * a = 2 * a 
+    22 00000008 660305[03000000]                add AX, [d]     ; AX = d + 2 * a 
+    23 0000000F 66F725[03000000]                mul WORD [d] ; DX:AX = d * (d + 2 * a)
+    24 00000016 8A1D[01000000]                  mov BL, [b]     ; BL = b 
+    25 0000001C F625[02000000]                  mul BYTE [c]    ; BX = b * c 
+    26 00000022 66F7F3                          div BX          ; AX = d * (d + 2 * a) / (b * c)
+    27                                          
+    28                                          
+    29                                      
+    30 00000025 6A00                            push    dword 0      
+    31 00000027 FF15[00000000]                  call    [exit]       

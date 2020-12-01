@@ -1,0 +1,45 @@
+     1                                  bits 32
+     2                                  global start 
+     3                                  extern exit
+     4                                  import exit msvcrt.dll
+     5                                  
+     6                                  segment data use32 class=data
+     7 00000000 0A09020704030C0B08-         sir1 dd 0702090Ah, 0B0C0304h, 05060108h
+     7 00000009 010605             
+     8                                      len1 equ $-sir1
+     9 0000000C 00<rept>                    sir2 times 2 * len1 db 0
+    10 00000024 17000000                    var dd 23
+    11                                  
+    12                                  ;Se da un sir de 3 dublucuvinte, fiecare dublucuvant continand 2 valori pe cuvant (despachetate, deci fiecare cifra hexa e precedata de un 0). Sa se creeze un sir de octeti care sa contina acele valori (impachetate 
+    13                                  segment code use32 class=code
+    14                                      start:
+    15 00000000 BE[00000000]                    mov ESI, sir1
+    16 00000005 BF[0C000000]                    mov EDI, sir2
+    17 0000000A B90C000000                      mov ECX, len1
+    18 0000000F FC                              cld 
+    19                                          repeta:
+    20 00000010 AD                                  lodsd   ; in EAX punem dword-ul curent din sir1
+    21                                                      ; EAX = 0702 090Ah
+    22                                                      ; in AX avem word-ul low, AX := 090Ah
+    23                                                      ; ESI = ESI + 1
+    24 00000011 89C3                                mov EBX, EAX    ; EBX = EAX = 0702 090Ah
+    25 00000013 C1E810                              shr EAX, 16      ; EAX = 0000 0702h, AX = 0702h, AL = 02h, AH = 07h
+    26 00000016 C1C804                              ror EAX, 4      ; EAX = 2000 0070h ,AX = 0070h
+    27 00000019 89C2                                mov EDX, EAX    ; var = 2000 0070h
+    28 0000001B C1E81C                              shr EAX, 28      ; EAX = 0000 0002h
+    29 0000001E 01C2                                add EDX, EAX    ; var = 2000 0072h
+    30 00000020 89D0                                mov EAX, EDX    ; EAX = 2000 0072h
+    31 00000022 AA                                  stosb   ; in EDI punem byte-ul 72h
+    32                                                      ; EDI = EDI + 1
+    33 00000023 C1E310                              shl EBX, 16      ; EBX = 090A 0000h
+    34 00000026 C1CB14                              ror EBX, 20      ; EBX = A000 0090h
+    35 00000029 89DA                                mov EDX, EBX    ; var = A000 0090h
+    36 0000002B C1EB1C                              shr EBX, 28      ; EBX = 0000 000Ah
+    37 0000002E 01DA                                add EDX, EBX    ; var = 0000 009Ah
+    38 00000030 89D0                                mov EAX, EDX
+    39 00000032 AA                                  stosb   ; in EDI punem byte-ul 9Ah
+    40                                                      ; EDI = EDI + 1
+    41 00000033 E2DB                                loop repeta
+    42                                              
+    43 00000035 6A00                            push    dword 0
+    44 00000037 FF15[00000000]                  call    [exit]

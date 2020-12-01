@@ -1,0 +1,5 @@
+﻿  Controller.cpp
+c:\users\vasilica\desktop\lab89\lab89\evidence.h(28): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+c:\users\vasilica\desktop\lab89\lab89\controller.cpp(122): warning C4101: 'inputException': unreferenced local variable
+c:\users\vasilica\desktop\lab89\lab89\controller.cpp(172): warning C4101: 'inputException': unreferenced local variable
+  Lab89.vcxproj -> C:\Users\Vasilica\Desktop\Lab89\Debug\Lab89.exe

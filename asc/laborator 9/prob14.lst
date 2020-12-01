@@ -1,0 +1,69 @@
+     1                                  bits 32 
+     2                                  
+     3                                  global start        
+     4                                  
+     5                                  extern exit, strstr, printf, scanf               
+     6                                  import exit msvcrt.dll 
+     7                                  import printf msvcrt.dll
+     8                                  import scanf msvcrt.dll 
+     9                                  import strstr msvcrt.dll   
+    10                                  extern conversion 
+    11                                                           
+    12                                  global x
+    13                                  global y
+    14                                  
+    15                                  segment data use32 class=data
+    16 00000000 00000000                    a dd 0
+    17 00000004 00000000                    c dd 0
+    18 00000008 00                          x db 0
+    19 00000009 00                          y db 0
+    20 0000000A 00000000                    b dd 0
+    21 0000000E 613D00                      printformat db "a=", 0
+    22 00000011 256400                      format db "%d", 0
+    23 00000014 0A00                        format2 db 10, 0
+    24                                      
+    25                                  ;Se citesc mai multe numere de la tastatura, in baza 2. Sa se afiseze aceste numere in baza 8.    
+    26                                  segment code use32 class=code 
+    27                                      start:
+    28 00000000 B902000000                      mov ecx, 2
+    29                                         repeta:
+    30 00000005 68[0E000000]                        push dword printformat
+    31 0000000A FF15[00000000]                      call [printf]
+    32 00000010 83C404                              add esp, 4*1
+    33                                              
+    34 00000013 68[00000000]                        push dword a
+    35 00000018 68[11000000]                        push dword format
+    36 0000001D FF15[00000000]                      call [scanf]
+    37 00000023 83C408                              add esp, 4*2
+    38                                              
+    39 00000026 833D[00000000]00                    cmp dword[a], 0
+    40 0000002D 764E                                jbe final
+    41                                              
+    42 0000002F 890D[04000000]                      mov dword[c], ecx
+    43 00000035 B900000000                          mov ecx, 0
+    44                                              ;push dword a
+    45 0000003A A3[0A000000]                        mov dword[b], eax
+    46 0000003F A1[00000000]                        mov eax, [a]
+    47 00000044 E8(00000000)                        call conversion
+    48                                              
+    49 00000049 A3[00000000]                        mov [a], eax
+    50 0000004E A1[0A000000]                        mov eax, dword[b]
+    51                                              
+    52 00000053 FF35[00000000]                      push dword[a]
+    53 00000059 68[11000000]                        push dword format
+    54                                              ;push dword[b]
+    55 0000005E FF15[00000000]                      call [printf]
+    56 00000064 83C408                              add esp, 4*2
+    57                                              
+    58 00000067 68[14000000]                        push dword format2
+    59 0000006C FF15[00000000]                      call [printf]
+    60 00000072 83C404                              add esp, 4*1
+    61                                              
+    62 00000075 8B0D[04000000]                      mov ecx, dword[c]
+    63 0000007B E288                                loop repeta 
+    64                                          
+    65                                          
+    66                                          final:
+    67                                          
+    68 0000007D 6A00                            push    dword 0      
+    69 0000007F FF15[00000000]                  call    [exit]    

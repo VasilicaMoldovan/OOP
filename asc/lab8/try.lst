@@ -1,0 +1,92 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  
+     4                                  extern exit, fwrite, fopen, fclose, printf, scanf, fprintf
+     5                                  import fprintf msvcrt.dll 
+     6                                  import printf msvcrt.dll
+     7                                  import scanf msvcrt.dll  
+     8                                  import exit msvcrt.dll
+     9                                  import fwrite msvcrt.dll
+    10                                  import fopen msvcrt.dll
+    11                                  import fclose msvcrt.dll 
+    12                                  
+    13                                  segment data use32 class=data public
+    14 00000000 6E657766696C652E74-         outputfile db 'newfile.txt', 0
+    14 00000009 787400             
+    15 0000000C 776F7264203D2000            message db 'word = ', 0
+    16 00000014 7700                        modwrite db 'w', 0
+    17 00000016 257300                      format db '%s', 0
+    18 00000019 256300                      formatNumber db '%c', 0
+    19 0000001C 303132333435363738-         digits db '0123456789'
+    19 00000025 39                 
+    20                                      len equ $-digits
+    21 00000026 00000000                    new_word dd 0
+    22 0000002A FF                          handle db -1
+    23 0000002B 0A00                        line db 10, 0
+    24                                      
+    25                                  
+    26                                  segment code use32 class=code public 
+    27                                      start:
+    28 00000000 68[14000000]                    push dword modwrite
+    29 00000005 68[00000000]                    push dword outputfile
+    30 0000000A FF15[00000000]                  call [fopen]
+    31 00000010 83C408                          add esp, 4*2
+    32                                          
+    33 00000013 A3[2A000000]                    mov [handle], eax 
+    34 00000018 83F800                          cmp eax, 0
+    35 0000001B 0F8484000000                    je theEnd
+    36                                          
+    37                                          repeta:
+    38 00000021 68[0C000000]                        push dword message
+    39 00000026 FF15[00000000]                      call [printf]
+    40 0000002C 83C404                              add esp, 4*1
+    41                                              
+    42 0000002F C705[26000000]0000-                 mov dword[new_word], 0
+    42 00000037 0000               
+    43                                              
+    44 00000039 68[26000000]                        push dword new_word
+    45 0000003E 68[16000000]                        push dword format
+    46 00000043 FF15[00000000]                      call [scanf]
+    47 00000049 83C408                              add esp, 4*2
+    48                                              
+    49 0000004C BA00000000                          mov edx, 0
+    50                                              repeta1:
+    51 00000051 B90A000000                              mov ecx, len
+    52 00000056 BE[1C000000]                            mov esi, digits
+    53                                                 repeta2:
+    54 0000005B AC                                          lodsb 
+    55 0000005C 3882[26000000]                              cmp [new_word + edx], al
+    56 00000062 740A                                        je isDigit
+    57 00000064 E2F5                                        loop repeta2
+    58 00000066 42                                      inc edx 
+    59 00000067 83FA0A                                  cmp edx, 10
+    60 0000006A 7D02                                    jge isDigit
+    61 0000006C EBE3                                    jmp repeta1
+    62                                                      
+    63                                              isDigit:
+    64 0000006E 83F900                              cmp ecx, 0
+    65 00000071 7418                                je notDigit
+    66                                              
+    67 00000073 FF35[2A000000]                      push dword[handle]
+    68 00000079 6A01                                push dword 1
+    69 0000007B 6A06                                push dword 6
+    70 0000007D 68[26000000]                        push dword new_word
+    71 00000082 FF15[00000000]                      call [fwrite]
+    72 00000088 83C410                              add esp, 4*4
+    73                                              
+    74                                              notDigit:
+    75                                                    
+    76 0000008B 833D[26000000]24                    cmp dword[new_word], '$'
+    77 00000092 7402                                je finish
+    78 00000094 EB8B                                jmp repeta
+    79                                          
+    80                                          finish:
+    81                                          
+    82 00000096 FF35[2A000000]                  push dword[handle]
+    83 0000009C FF15[00000000]                  call [fclose]
+    84 000000A2 83C404                          add esp, 4*1
+    85                                          
+    86                                          theEnd:
+    87                                      
+    88 000000A5 6A00                        push    dword 0
+    89 000000A7 FF15[00000000]              call    [exit]

@@ -1,0 +1,4 @@
+Fuel Type diesel, Base Price 3000.000000, Autonomy 10, Body Style Chariot, Final Price 11000.1
+Fuel Type geomantic, Base Price 3000.000000, Body Style Carriage, Final Price 4001.5
+Fuel Type geomantic, Base Price 3000.000000, Body Style Carriage, Final Price 4001.5
+Fuel Type fuel, Base Price 3000.000000, Autonomy 12, Body Style Charriot, Final Price 4000.12

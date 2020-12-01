@@ -1,0 +1,7 @@
+2,     Ana,     What is the maximum grade at oop?
+4,     Florin,     Are aliens real?
+24538,     Ion,     Why are so many flies in the summer?
+239,     Christiano Ronaldo,     What is gravitation?
+240,    Ana,    Florin Salam
+241,    jumatate eu,    Christiano Ronaldo
+242,   Christiano Ronaldo,   Are Ana multe mere?

@@ -1,0 +1,63 @@
+1.Given the first node of a SLL, determine whether the list ends
+with a node that has NIL as next or whether it ends with a
+cycle (the last node contains the address of a previous node
+as next).
+Solution:
+	i) Traverse linked list using two pointers.Move one pointer by one and other 
+pointer by two.If these pointers meet at same node then there is a loop.If pointers 
+do not meet then linked list doesn’t have loop.To find the length of the cycle, after our pointers met
+(this point in contained in the loop) we start counting while parsing the cycle until we arrive again
+in this node.
+	ii) In this method, a temporary node is created. The next pointer of each node
+that is traversed is made to point to this temporary node. This way we are using the next
+pointer of a node as a flag to indicate whether the node has been traversed or not. Every
+node is checked to see if the next is pointing to temporary node or not. In the case of 
+the first node of the loop, the second time we traverse it this condition will be true, 
+hence we find that loop exists. If we come across a node that points to null then loop doesn’t exist.
+The code runs in O(n) time complexity and uses constant memory space.
+
+2.Find if a SLL has an even or an odd number of elements,without counting
+the number of nodes in any way.
+Solution:
+	Take a pointer and move that pointer two nodes at a time.At the end, 
+if the pointer is NULL then length is Even, else Odd.
+
+3.The Josephus problem
+Solution:
+	The problem has following recursive structure:
+  		josephus(n, k) = (josephus(n - 1, k) + k-1) % n + 1;
+  		josephus(1, k) = 1;
+
+4.Suppose there are two singly linked lists both of which
+intersect at some point and become a single linked list.The number of nodes in 
+the two lists before the intersection is not known and may be different in each list.
+Give an algorithm for finding the merging point (hint - use a
+Stack).
+Solution:
+	Use two auxiliary stacks.In s1 store the nodes(or the addresses of the nodes)
+of the first linked list, and in stack s2 store the nodes of the second linked list. In
+the end pop s1 and s2. If the popped elements are equal then store that information in an
+temporary variable, if not the content of the temporary variable is the merging node. 
+
+5.Assume you have a binary tree, but you do not know how it looks like, 
+but you have the preorder and inorder traversal ofthe tree. 
+Give an algorithm for building the tree based on these two traversals.
+Solution:
+	Use the fact that InOrder traversal is Left-Root-Right and PreOrder traversal 
+is Root-Left-Right. Also, first node in the PreOrder traversal is always the root node
+ and the first node in the InOrder traversal is the leftmost node in the tree.Maintain
+ two data-structures : Stack (to store the path we visited while traversing PreOrder
+ array) and Set (to maintain the node in which the next right subtree is expected).
+	1. Do below until you reach the leftmost node.
+	Keep creating the nodes from PreOrder traversal
+	If the stack’s topmost element is not in the set, link the created node to 
+the left child of stack’s topmost element (if any), without popping the element.
+	Else link the created node to the right child of stack’s topmost element. 
+Remove the stack’s topmost element from the set and the stack.
+	Push the node to a stack.
+
+6.Implement a queue using a priority queue
+Solution:
+	Have an index which counts the number of iterations(when we push the i'th element 
+the index will be i) and this index represents the priority of the element. Then, when we need to pop
+an element, we will pop the element with the smallest priority (meaning that it was added first in the queue).

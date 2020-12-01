@@ -1,0 +1,7 @@
+﻿  ExtendedTest.cpp
+  ShortTest.cpp
+  multiMap.cpp
+c:\users\vasilica\desktop\dsa\lab3_sda\lab3_sda\multimap.cpp(5): error C2659: '=': function as left operand
+c:\users\vasilica\desktop\dsa\lab3_sda\lab3_sda\multimap.cpp(6): error C2659: '=': function as left operand
+  multiMapIterator.cpp
+  Generating Code...

@@ -1,0 +1,86 @@
+﻿  Console.c
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(5): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(6): warning C4013: 'strtok' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(6): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(8): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(10): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(12): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(32): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(36): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(36): warning C4024: 'addNewIngredient': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(42): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(42): warning C4024: 'updateIngredient': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(51): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(54): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(54): warning C4024: 'deleteIngredient': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(61): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(63): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [10000]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(63): warning C4024: 'listIngredients': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(67): warning C4013: 'isalpha' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(69): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(70): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [10000]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(70): warning C4024: 'listFilteredList': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(75): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(76): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [10000]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(76): warning C4024: 'listSortedVector': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(83): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(90): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(90): warning C4024: 'undoOperation': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(96): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(102): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(102): warning C4024: 'redoOperation': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(31): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'int'
+  Controller.c
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(6): warning C4133: 'function': incompatible types - from 'void (__cdecl *)(TElem *,char **,SubstanceRepository *)' to 'operation'
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(6): warning C4020: 'createUndoOperation': too many actual parameters
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(15): warning C4133: 'function': incompatible types - from 'void (__cdecl *)(TElem *,char **,SubstanceRepository *)' to 'operation'
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(15): warning C4020: 'createUndoOperation': too many actual parameters
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(23): warning C4133: 'function': incompatible types - from 'void (__cdecl *)(TElem *,char **,SubstanceRepository *)' to 'operation'
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(23): warning C4020: 'createUndoOperation': too many actual parameters
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(53): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\controller.c(70): warning C4013: 'strcpy' undefined; assuming extern returning int
+  Repository.c
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(15): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(18): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(55): warning C4013: 'strcat' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(73): warning C4013: 'strstr' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(73): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(177): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\vasilica\desktop\lab4 (1)\lab4\repository.c(183): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+  Source.c
+  Tests.c
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(14): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(15): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(42): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(42): warning C4024: 'addSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(43): warning C4013: 'strlen' undefined; assuming extern returning int
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(44): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(44): warning C4024: 'addSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(48): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(48): warning C4024: 'updateSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(53): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(53): warning C4024: 'addSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(54): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(54): warning C4024: 'deleteSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(78): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(78): warning C4024: 'addNewIngredient': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(82): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(82): warning C4024: 'deleteIngredient': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(84): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(84): warning C4024: 'undoOperation': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(87): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(87): warning C4024: 'redoOperation': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(89): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(89): warning C4024: 'addNewIngredient': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(91): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\lab4 (1)\lab4\tests.c(91): warning C4024: 'updateIngredient': different types for formal and actual parameter 1
+  undoRedo.c
+c:\users\vasilica\desktop\lab4 (1)\lab4\undoredo.c(3): warning C4028: formal parameter 4 different from declaration
+c:\users\vasilica\desktop\lab4 (1)\lab4\undoredo.c(12): warning C4047: '=': 'operation' differs in levels of indirection from 'operation *'
+c:\users\vasilica\desktop\lab4 (1)\lab4\undoredo.c(30): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\vasilica\desktop\lab4 (1)\lab4\undoredo.c(31): warning C4047: '=': 'UndoRedo *' differs in levels of indirection from 'UndoRedo **'
+c:\users\vasilica\desktop\lab4 (1)\lab4\undoredo.c(39): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\vasilica\desktop\lab4 (1)\lab4\undoredo.c(40): warning C4047: '=': 'UndoRedo *' differs in levels of indirection from 'UndoRedo **'
+  Generating Code...
+c:\users\vasilica\desktop\lab4 (1)\lab4\console.c(15): warning C4716: 'uiAddOrUpdateIngredient': must return a value
+  bonusOOP.vcxproj -> C:\Users\Vasilica\Desktop\OOP\bonusOOP\Debug\bonusOOP.exe

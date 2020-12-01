@@ -1,0 +1,6 @@
+2, 4,     Florin Salam,     Nu prea, 27
+17, 2,     Victoria Beckam,     it is 10, 356
+2438, 239,     Ana,     You won't understand it anyway, 10000
+2439, 239,   Florin Salam,   Something smaaart, 0
+2440, 4,  Christiano Ronaldo,  nope, 0
+2441, 4, Victoria Beckam, maybe, 0

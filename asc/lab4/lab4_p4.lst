@@ -1,0 +1,68 @@
+     1                                  bits 32
+     2                                  global start        
+     3                                  
+     4                                  extern exit               
+     5                                  import exit msvcrt.dll    
+     6                                  
+     7                                  segment data use32 class=data
+     8 00000000 87                          A db 10000111b
+     9 00000001 00                          B db 0
+    10 00000002 00000000                    C dd 0
+    11 00000006 00                          n db 0
+    12                                  ;Se da octetul A. Sa se obtina numarul intreg n reprezentat de bitii 2-4 ai lui A. Sa se obtina apoi in B octetul ;rezultat prin rotirea spre dreapta a lui A cu n pozitii. Sa se obtina dublucuvantul C:
+    13                                  ;bitii 8-15 ai lui C sunt 0
+    14                                  ;bitii 16-23 ai lui C coincid cu bitii lui B
+    15                                  ;bitii 24-31 ai lui C coincid cu bitii lui A
+    16                                  ;bitii 0-7 ai lui C sunt 1
+    17                                  segment code use32 class=code
+    18                                      start:
+    19                                          ;Sa se obtina numarul intreg n reprezentat de bitii 2-4 ai lui A
+    20 00000000 A0[00000000]                    mov AL, [A]     ; AL = 10000111b
+    21 00000005 241C                            and AL, 00011100b   ; izolam bitii 2-4
+    22                                                              ; AL = 0000 0100b
+    23 00000007 A2[06000000]                    mov [n], AL  ; n = 0000 0100b = 4
+    24                                          
+    25                                          ;Sa se obtina apoi in B octetul rezultat prin rotirea spre dreapta a lui A cu n pozitii
+    26 0000000C A0[00000000]                    mov AL, [A]     ; AL = 1000 0111b
+    27 00000011 8A0D[06000000]                  mov CL, [n]     ; CL = n = 0000 0100b = 4
+    28 00000017 D2C8                            ror AL, CL     ; rotim spre dreapta AL cu n = 4 pozitii
+    29                                                          ; AL = 0111 1000b
+    30 00000019 A2[01000000]                    mov [B], AL     ; B = 0111 1000b
+    31                                          
+    32                                          ;bitii 8-15 ai lui C sunt 0
+    33 0000001E 8325[02000000]00                and dword[C], 00000000000000000000000000000000b    ; bitii 8-15 ai lui C sunt 0
+    34                                          
+    35                                          ;bitii 16-23 ai lui C coincid cu bitii lui B
+    36 00000025 A0[01000000]                    mov AL, [B]     ; AL = 0111 1000b
+    37 0000002A B400                            mov AH, 0       ; conversie fara semn de la AL la AX
+    38 0000002C 66BA0000                        mov DX , 0      ; conversie fara semn de la AX la DX:AX
+    39 00000030 6650                            push AX
+    40 00000032 6652                            push DX
+    41 00000034 58                              pop EAX         ; EAX = DX:AX
+    42                                                          ; EAX = 0000 0000 0000 0000 0000 0000 0111 1000b
+    43 00000035 C1E010                          shl EAX, 16     ; shfitam cu 16 pozitii spre stanga pentru ca bitii 0-7 din EAX(bitii octetului B) sa ajunga 
+    44                                                          ; pe pozitiile 16-23
+    45                                                          ; EAX = 0000 0000 0111 1000 0000 0000 0000 0000b
+    46 00000038 250000FF00                      and EAX, 00000000111111110000000000000000b  ;izolam bitii 16-23 
+    47 0000003D 0905[02000000]                  or [C], EAX     ; bitii 16-23 ai lui C coincid cu bitii 16-23 ai lui EAX(cu bitii octetului B)
+    48                                          
+    49                                          ;bitii 24-31 ai lui C coincid cu bitii lui A
+    50 00000043 A0[00000000]                    mov AL, [A]     ; AL = 1000 0111b
+    51 00000048 B400                            mov AH, 0       ; conversie fara semn de la AL la AX
+    52 0000004A 66BA0000                        mov DX, 0       ; conversie fara semn de la AX la DX:AX
+    53 0000004E 6650                            push AX
+    54 00000050 6652                            push DX
+    55 00000052 58                              pop EAX         ; EAX = DX:AX 
+    56                                                          ; EAX = 0000 0000 0000 0000 0000 0000 1000 0111b
+    57 00000053 C1E018                          shl EAX, 24     ; shiftam cu 24 de pozitii spre stanga pentru ca bitii 0-7 din EAX(bitii octetului A)
+    58                                                          ; sa ajunga pe pozitiile 24-31
+    59 00000056 25000000FF                      and EAX, 11111111000000000000000000000000b   ; izolam bitii 24-31
+    60 0000005B 0905[02000000]                  or [C], EAX     ; bitii 24-31 ai lui C coincid cu bitii 24-31 ai lui EAX(bitii octetului A)
+    61                                          
+    62                                          ;bitii 0-7 ai lui C sunt 1
+    63 00000061 810D[02000000]FF00-             or dword[C], 00000000000000000000000011111111b    ; bitii 0-7 ai lui C devin 1
+    63 00000069 0000               
+    64                                          
+    65                                          
+    66 0000006B 6A00                            push    dword 0      
+    67 0000006D FF15[00000000]                  call    [exit]       

@@ -1,0 +1,37 @@
+     1                                  bits 32
+     2                                  global start        
+     3                                  extern exit              
+     4                                  import exit msvcrt.dll  
+     5                                  
+     6                                  segment data use32 class=data
+     7 00000000 616241446563                S db 'a', 'b', 'A', 'D', 'e', 'c'
+     8                                      lenS equ $-S 
+     9 00000006 00<rept>                    D times lenS db 0
+    10                                     
+    11                                  ;Se da un sir de caractere S. Sa se construiasca sirul D care sa contina toate literele mici din sirul S. 
+    12                                  segment code use32 class=code
+    13                                      start:
+    14 00000000 BE[00000000]                    mov ESI, S  ;punem in ESI primul byte din sirul S
+    15 00000005 BF[06000000]                    mov EDI, D  ;punem in EDI primul byte din sirul D
+    16 0000000A B906000000                      mov ECX, lenS   ; punem in ECX lungimea lenS pentru a realiza bucla loop de ECX ori
+    17                                          
+    18                                          repeat:
+    19 0000000F 8A06                                mov AL, [ESI]   ; mutam in AL byte-ul din ESI
+    20 00000011 46                                  inc ESI         ; crestem pozitia in ESI cu 1
+    21                                              
+    22 00000012 3C61                                cmp AL, 'a'
+    23 00000014 7306                                jae litera
+    24 00000016 3C7A                                cmp AL, 'z'
+    25 00000018 7602                                jbe litera1
+    26 0000001A 7203                                jb skip
+    27                                              litera:
+    28                                                  litera1:
+    29 0000001C 8807                                        mov [EDI], AL   ; punem litera din AL in EDI(sirul D)
+    30 0000001E 47                                          inc EDI         ; inaintam in sirul EDI
+    31                                              skip:
+    32 0000001F 49                                  dec ECX             ; scadem numarul de repetari 
+    33 00000020 83F900                              cmp ECX, 0
+    34 00000023 77EA                                ja repeat
+    35                                         
+    36 00000025 6A00                            push    dword 0    
+    37 00000027 FF15[00000000]                  call    [exit]    

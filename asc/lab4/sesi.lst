@@ -1,0 +1,61 @@
+     1                                  bits 32 
+     2                                  global start     
+     3                                  
+     4                                  extern function    
+     5                                  extern exit, printf          
+     6                                  import exit msvcrt.dll
+     7                                  import printf msvcrt.dll   
+     8                                   
+     9                                  ;include function 
+    10                                  segment data use32 class=data
+    11                                      ; ...
+    12 00000000 78A63412785634127D-         string dd 1234A678h, 12345678h, 1AC3B47Dh, 1CFE9876h 
+    12 00000009 B4C31A7698FE1C     
+    13                                      len equ ($-string) / 4 
+    14 00000010 00000000<rept>              final_string times len dd 0
+    15 00000020 257800                      format db "%x", 0
+    16 00000023 256400                      format2 db "%d", 0
+    17                                      ;sum db 0
+    18 00000026 656E74657220746865-         var1 db "enter the function", 0
+    18 0000002F 2066756E6374696F6E-
+    18 00000038 00                 
+    19 00000039 657869742074686520-         var2 db "exit the function", 0
+    19 00000042 66756E6374696F6E00 
+    20                                      
+    21                                  segment code use32 class=code
+    22                                      start:
+    23                                      
+    24 00000000 68[00000000]                    push dword string
+    25 00000005 58                              pop eax 
+    26                                          
+    27 00000006 50                              push dword eax 
+    28 00000007 68[20000000]                    push dword format
+    29 0000000C FF15[00000000]                  call [printf]
+    30 00000012 83C408                          add esp, 4 * 2 
+    31                                               
+    32                                          ;mov ecx, len 
+    33                                          ;mov esi, string
+    34                                          ;mov edi, final_string
+    35                                          ;push dword ecx 
+    36                                          ;push dword esi 
+    37                                          ;push dword edi 
+    38                                          
+    39                                          ;push dword var1
+    40                                          ;call [printf]
+    41                                          ;add esp, 4
+    42                                    
+    43                                          ;call function 
+    44                                          
+    45                                          ;push dword var2
+    46                                          ;call [printf]
+    47                                          ;add esp, 4
+    48                                             
+    49                                          ;pop edi 
+    50                                          ;push dword eax 
+    51                                          ;push dword format2
+    52                                          ;call [printf]
+    53                                          ;add esp, 4 * 2
+    54                                          
+    55                                          
+    56 00000015 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    57 00000017 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

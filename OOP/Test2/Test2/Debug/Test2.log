@@ -1,0 +1,8 @@
+﻿  Console.cpp
+  Controller.cpp
+c:\users\vasilica\desktop\oop\test2\test2\controller.cpp(42): warning C4018: '<': signed/unsigned mismatch
+c:\users\vasilica\desktop\oop\test2\test2\controller.cpp(43): warning C4018: '<': signed/unsigned mismatch
+  Domain.cpp
+  main.cpp
+  Generating Code...
+  Test2.vcxproj -> C:\Users\Vasilica\Desktop\OOP\Test2\Debug\Test2.exe

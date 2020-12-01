@@ -1,0 +1,579 @@
+﻿  Console.c
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(27): error C2085: 'sortMaximumPotencyValue': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(28): error C2085: 'sortMaximumPotencyValueDescending': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(29): error C2085: 'searchSubstance': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(4): error C2082: redefinition of formal parameter 'TElem'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(6): error C2085: 'operation': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(11): error C2061: syntax error: identifier 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2061: syntax error: identifier 'inverseOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(14): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(20): error C2061: syntax error: identifier 'UndoOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(22): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *operation': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int UndoRedo': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *undoOperations': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'undoOperations'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2146: syntax error: missing ')' before identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2081: 'operation': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2061: syntax error: identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ','
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(27): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(7): error C2061: syntax error: identifier 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(8): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(17): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(5): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(6): warning C4013: 'strtok' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(6): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(8): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(10): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(12): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(24): error C2065: 'SubstancesController': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(24): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(24): warning C4552: '*': result of expression not used
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(25): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(25): warning C4047: '=': 'int' differs in levels of indirection from 'int *'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(32): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(36): warning C4013: 'addNewIngredient' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(36): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(41): warning C4013: 'updateIngredient' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(41): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(48): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(51): warning C4013: 'deleteIngredient' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(51): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(57): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(59): warning C4013: 'listIngredients' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(59): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(63): warning C4013: 'isalpha' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(65): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(67): warning C4013: 'listStateIngredients' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(67): error C2065: 'controllerList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\console.c(67): fatal error C1003: error count exceeds 100; stopping compilation
+  Controller.c
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(27): error C2085: 'sortMaximumPotencyValue': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(28): error C2085: 'sortMaximumPotencyValueDescending': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(29): error C2085: 'searchSubstance': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(4): error C2082: redefinition of formal parameter 'TElem'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(6): error C2085: 'operation': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(11): error C2061: syntax error: identifier 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2061: syntax error: identifier 'inverseOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(14): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(20): error C2061: syntax error: identifier 'UndoOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(22): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *operation': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int UndoRedo': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *undoOperations': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'undoOperations'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2146: syntax error: missing ')' before identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2081: 'operation': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2061: syntax error: identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ','
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(27): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(7): error C2061: syntax error: identifier 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(8): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(17): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(3): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(3): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(3): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(3): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(3): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(3): error C2054: expected '(' to follow 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(10): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(10): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.c(10): fatal error C1003: error count exceeds 100; stopping compilation
+  Repository.c
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(27): error C2085: 'sortMaximumPotencyValue': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(28): error C2085: 'sortMaximumPotencyValueDescending': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(29): error C2085: 'searchSubstance': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(5): error C2082: redefinition of formal parameter 'existingSubstance'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(5): error C2143: syntax error: missing ';' before '{'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(6): error C2065: 'repositoryList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(6): error C2223: left of '->lengthOfVector' must point to struct/union
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(7): error C2065: 'substance': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(7): warning C4047: 'function': 'Substance *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(7): warning C4024: 'equalSubstances': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(7): error C2065: 'repositoryList': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(7): error C2223: left of '->vectorOfSubstances' must point to struct/union
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(7): error C2198: 'equalSubstances': too few arguments for call
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(8): warning C4098: 'sortMaxPotencyValue': 'void' function returning a value
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(10): warning C4098: 'sortMaxPotencyValue': 'void' function returning a value
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(15): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(18): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(53): warning C4013: 'strcat' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(54): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(640): note: see declaration of '_itoa'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(61): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(640): note: see declaration of '_itoa'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(76): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(77): warning C4013: 'strstr' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(77): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(82): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(163): warning C4047: 'function': 'TElem *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(163): warning C4024: 'relation': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(163): warning C4024: 'relation': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(193): warning C4047: 'function': 'TElem *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(193): warning C4024: 'relation': different types for formal and actual parameter 1
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(193): warning C4024: 'relation': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(215): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(640): note: see declaration of '_itoa'
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.c(222): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdlib.h(640): note: see declaration of '_itoa'
+  Source.c
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(27): error C2085: 'sortMaximumPotencyValue': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(28): error C2085: 'sortMaximumPotencyValueDescending': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(29): error C2085: 'searchSubstance': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(4): error C2082: redefinition of formal parameter 'TElem'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(6): error C2085: 'operation': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(11): error C2061: syntax error: identifier 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2061: syntax error: identifier 'inverseOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(14): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(20): error C2061: syntax error: identifier 'UndoOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(22): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *operation': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int UndoRedo': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *undoOperations': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'undoOperations'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2146: syntax error: missing ')' before identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2081: 'operation': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2061: syntax error: identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ','
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(27): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(7): error C2061: syntax error: identifier 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(8): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(17): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+  Tests.c
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(27): error C2085: 'sortMaximumPotencyValue': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(28): error C2085: 'sortMaximumPotencyValueDescending': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(29): error C2085: 'searchSubstance': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(4): error C2082: redefinition of formal parameter 'TElem'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(6): error C2085: 'operation': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(11): error C2061: syntax error: identifier 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2061: syntax error: identifier 'inverseOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(14): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(20): error C2061: syntax error: identifier 'UndoOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(22): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *operation': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int UndoRedo': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *undoOperations': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'undoOperations'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2146: syntax error: missing ')' before identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2081: 'operation': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2061: syntax error: identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ','
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(27): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(7): error C2061: syntax error: identifier 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(8): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(11): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(12): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(13): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(14): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(15): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(16): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(17): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(18): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(19): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(20): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2081: 'SubstancesController': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(21): error C2086: 'int *controller': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\controller.h(10): note: see declaration of 'controller'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(14): warning C4013: 'strcpy' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(15): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(30): warning C4013: 'createRepository' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(30): warning C4047: '=': 'SubstanceRepository *' differs in levels of indirection from 'int'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(44): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(44): warning C4024: 'addSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(45): warning C4013: 'strlen' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(46): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(46): warning C4024: 'addSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(50): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(50): warning C4024: 'updateSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(55): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(55): warning C4024: 'addSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(56): warning C4047: 'function': 'char **' differs in levels of indirection from 'char [200]'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(56): warning C4024: 'deleteSubstance': different types for formal and actual parameter 2
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(63): error C2065: 'SubstancesController': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(63): error C2065: 'controllerTest': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(63): warning C4552: '*': result of expression not used
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(64): error C2065: 'controllerTest': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(64): warning C4047: '=': 'int' differs in levels of indirection from 'int *'
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(81): warning C4013: 'addNewIngredient' undefined; assuming extern returning int
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(81): error C2065: 'controllerTest': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(82): error C2065: 'controllerTest': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(82): error C2223: left of '->substancesRepo' must point to struct/union
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(83): error C2065: 'controllerTest': undeclared identifier
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(83): error C2223: left of '->substancesRepo' must point to struct/union
+c:\users\vasilica\desktop\oop\lab3\lab3\tests.c(83): fatal error C1003: error count exceeds 100; stopping compilation
+  undoRedo.c
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(27): error C2085: 'sortMaximumPotencyValue': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(28): error C2085: 'sortMaximumPotencyValueDescending': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\repository.h(29): error C2085: 'searchSubstance': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(4): error C2082: redefinition of formal parameter 'TElem'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(6): error C2085: 'operation': not in formal parameter list
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(11): error C2061: syntax error: identifier 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2061: syntax error: identifier 'inverseOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(12): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(14): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(20): error C2061: syntax error: identifier 'UndoOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(21): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(22): error C2059: syntax error: '}'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *operation': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'operation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int UndoRedo': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'UndoRedo'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2143: syntax error: missing ';' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(25): error C2086: 'int *undoOperations': redefinition
+  c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(24): note: see declaration of 'undoOperations'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2146: syntax error: missing ')' before identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2081: 'operation': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2061: syntax error: identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ','
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(26): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(27): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(28): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing ')' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.h(29): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2143: syntax error: missing '{' before '*'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2146: syntax error: missing ')' before identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2081: 'operation': name in formal parameter list illegal
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2061: syntax error: identifier 'directOperation'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2059: syntax error: ';'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2059: syntax error: ','
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(3): error C2059: syntax error: ')'
+c:\users\vasilica\desktop\oop\lab3\lab3\undoredo.c(15): fatal error C1506: unrecoverable block scoping error
+  Generating Code...

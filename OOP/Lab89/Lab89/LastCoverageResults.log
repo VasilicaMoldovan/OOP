@@ -1,0 +1,21 @@
+[2019-05-15 07:55:48] [info] Start Program:
+Path:"C:\Users\Vasilica\Desktop\Lab89\Debug\Lab89.exe"
+Arguments:
+Working directory: "C:\Users\Vasilica\Desktop\Lab89\Lab89\"
+Modules: Selected: C:\Users\Vasilica\Desktop\Lab89\Debug\Lab89.exe Excluded: 
+Sources: Selected: C:\Users\Vasilica\Desktop\Lab89\Lab89 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Vasilica\AppData\Local\Temp\t0yjrss0.4la 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2019-05-15 07:55:48] [info] Module: C:\Users\Vasilica\Desktop\Lab89\Debug\Lab89.exe is selected because it matches selected pattern: C:\Users\Vasilica\Desktop\Lab89\Debug\Lab89.exe
+[2019-05-15 07:55:48] [info] ----------------------------------------------------
+[2019-05-15 07:55:48] [info] Coverage binary generated in file: C:\Users\Vasilica\AppData\Local\Temp\t0yjrss0.4la
+[2019-05-15 07:55:48] [info] ----------------------------------------------------

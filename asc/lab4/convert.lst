@@ -1,0 +1,62 @@
+     1                                  bits 32 global start        
+     2                                  global start 
+     3                                  extern exit, printf, scanf             
+     4                                  import exit msvcrt.dll    
+     5                                  import scanf msvcrt.dll
+     6                                  import printf msvcrt.dll 
+     7                                  
+     8                                  segment data use32 class=data public 
+     9 00000000 7B00                        number dw 123
+    10 00000002 256800                      format db "%h", 0
+    11 00000005 6E756D626572203D20-         readformat db "number = ", 0
+    11 0000000E 00                 
+    12 0000000F 256400                      format1 db "%d", 0
+    13                                          
+    14                                  ;Conversie din baza 10 in baza 16
+    15                                      
+    16                                  segment code use32 class=code public 
+    17                                      start:
+    18                                          
+    19                                          ;mov edi, 0
+    20                                          ;mov esi, number
+    21                                          ;cmp word[number], 0
+    22                                          ;jle skip
+    23                                          ;repeta:
+    24                                           ;   mov bl, 16
+    25                                            ;  mov ax, word[number]
+    26                                             ; idiv bl
+    27                                              ;mov byte[number], al 
+    28                                              ;cmp ah, 0
+    29                                          ;    jl skip2 
+    30                                           ;   cmp ah, 9
+    31                                            ;  jg skip2
+    32                                             ; add ah, '0'
+    33                                              ;mov al, ah
+    34                                          ;    stosb
+    35                                           ;   cmp word[number], 0
+    36                                            ;  jg repeta
+    37                                             ; skip2:
+    38                                              ;    sub ah, 10
+    39                                               ;   add ah, 'A'
+    40                                                ;  mov al, ah 
+    41                                                 ; stosb 
+    42                                                  ;cmp word[number], 0
+    43                                                  ;jg repeta
+    44                                          ;skip:
+    45                                          
+    46 00000000 68[05000000]                    push dword readformat
+    47 00000005 FF15[00000000]                  call [printf]
+    48 0000000B 83C404                          add esp, 4
+    49                                          
+    50 0000000E 68[00000000]                    push dword number
+    51 00000013 68[0F000000]                    push dword format1
+    52 00000018 FF15[00000000]                  call [scanf]
+    53 0000001E 83C408                          add esp, 4 * 2
+    54                                          
+    55 00000021 FF35[00000000]                  push dword[number]
+    56 00000027 68[0F000000]                    push dword format1
+    57 0000002C FF15[00000000]                  call [printf]
+    58 00000032 83C408                          add esp, 4 * 2
+    59                                          
+    60 00000035 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    61 00000037 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

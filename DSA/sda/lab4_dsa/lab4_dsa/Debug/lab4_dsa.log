@@ -1,0 +1,3 @@
+﻿  SortedBag.cpp
+c:\users\vasilica\desktop\dsa\lab4_dsa\lab4_dsa\sortedbag.cpp(100): warning C4244: '*=': conversion from 'double' to 'int', possible loss of data
+  lab4_dsa.vcxproj -> C:\Users\Vasilica\Desktop\DSA\lab4_dsa\Debug\lab4_dsa.exe

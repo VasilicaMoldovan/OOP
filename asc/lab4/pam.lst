@@ -1,0 +1,24 @@
+     1                                  bits 32 
+     2                                  global start        
+     3                                  extern exit, printf          
+     4                                  import exit msvcrt.dll
+     5                                  import printf msvcrt.dll   
+     6                                   
+     7                                  segment data use32 class=data
+     8                                      ; ...
+     9 00000000 78A63412785634127D-         string dd 1234A678h, 12345678h, 1AC3B47Dh, 1CFE9876h 
+     9 00000009 B4C31A7698FE1C     
+    10                                      len equ $-string
+    11 00000010 00000000<rept>              final_string times len dd 0
+    12 00000050 256400                      format db "%d", 0
+    13                                      
+    14                                  segment code use32 class=code
+    15                                      start:
+    16 00000000 FF3510000000                    push dword[len]
+    17 00000006 68[50000000]                    push dword format
+    18 0000000B FF15[00000000]                  call [printf]
+    19 00000011 83C408                          add esp, 4 * 2
+    20                                          
+    21                                          
+    22 00000014 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    23 00000016 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

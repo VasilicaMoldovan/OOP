@@ -1,0 +1,77 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit, perror, fopen, fclose, fread, printf
+     4                                  import exit msvcrt.dll
+     5                                  import perror msvcrt.dll
+     6                                  import fopen msvcrt.dll
+     7                                  import fclose msvcrt.dll
+     8                                  import fread msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  
+    11                                  segment data use32 class=data
+    12 00000000 6669736965722E7478-         inputfile db 'fisier.txt', 0
+    12 00000009 7400               
+    13 0000000B 7200                        modread db 'r', 0
+    14 0000000D FFFFFFFF                    handle1 dd -1
+    15 00000011 6572726F723A00              eroare db 'error:', 0
+    16 00000018 00                          c db 0
+    17 00000019 6165696F754145494F-         vocale db 'aeiouAEIOU'
+    17 00000022 55                 
+    18                                      len equ $-vocale + 1
+    19 00000023 00000000                    nr dd 0
+    20 00000027 256400                      format db "%d", 0
+    21                                      
+    22                                  ;Se da un fisier text. Sa se citeasca continutul fisierului, sa se contorizeze numarul de vocale si sa se afiseze aceasta valoare. Numele fisierului text este definit in segmentul de date.
+    23                                  segment code use32 class=code
+    24                                      start:
+    25 00000000 68[0B000000]                    push dword modread
+    26 00000005 68[00000000]                    push dword inputfile
+    27 0000000A FF15[00000000]                  call [fopen]
+    28 00000010 83C408                          add ESP, 4*2
+    29                                          
+    30 00000013 A3[0D000000]                    mov [handle1], EAX
+    31 00000018 83F800                          cmp EAX, 0
+    32 0000001B 746A                            je finish 
+    33                                          
+    34 0000001D BB00000000                      mov EBX, 0
+    35                                          repeat:
+    36 00000022 FF35[0D000000]                      push dword[handle1]
+    37 00000028 6A01                                push dword 1
+    38 0000002A 6A01                                push dword 1
+    39 0000002C 68[18000000]                        push dword c
+    40 00000031 FF15[00000000]                      call [fread]
+    41 00000037 83C410                              add ESP, 4*4
+    42                                              
+    43 0000003A 83F800                              cmp EAX, 0
+    44 0000003D 741F                                je error
+    45                                              
+    46 0000003F B90B000000                          mov ECX, len
+    47 00000044 BE[19000000]                        mov ESI, vocale
+    48                                              repeta1:
+    49 00000049 AC                                      lodsb 
+    50 0000004A 3805[18000000]                          cmp [c], AL
+    51 00000050 7402                                    je Vocala
+    52 00000052 E2F5                                    loop repeta1
+    53                                              
+    54                                              Vocala:
+    55 00000054 83F900                              cmp ECX, 0
+    56 00000057 7403                                je NuEVocala
+    57 00000059 83C301                              add EBX, 1
+    58                                              NuEVocala:
+    59 0000005C EBC4                                jmp repeat
+    60                                              
+    61                                            error:
+    62 0000005E FF35[0D000000]                      push dword [handle1]
+    63 00000064 FF15[00000000]                      call [fclose]
+    64 0000006A 83C404                              add ESP, 4*1
+    65                                              
+    66 0000006D 891D[23000000]                    mov dword[nr], EBX
+    67 00000073 FF35[23000000]                    push dword[nr]
+    68 00000079 68[27000000]                      push dword format
+    69 0000007E FF15[00000000]                    call [printf]
+    70 00000084 83C408                            add ESP, 4*2
+    71                                            
+    72                                          finish:
+    73 00000087 6A00                            push    dword 0
+    74 00000089 FF15[00000000]                  call    [exit]
+    75                                  

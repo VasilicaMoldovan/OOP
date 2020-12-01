@@ -1,0 +1,59 @@
+     1                                  bits 32 global start        
+     2                                  global start 
+     3                                  extern exit, printf, scanf             
+     4                                  import exit msvcrt.dll    
+     5                                  import scanf msvcrt.dll
+     6                                  import printf msvcrt.dll 
+     7                                  
+     8                                  segment data use32 class=data public 
+     9 00000000 78A63412785634127D-         sir dd 1234A678h, 12345678h, 1AC3B47Dh, 0FEDC9876h
+     9 00000009 B4C31A7698DCFE     
+    10                                      len equ 4
+    11 00000010 257300                      formatString db "%s", 0
+    12 00000013 257800                      formatHexa db "%x", 0
+    13 00000016 4C656E677468203D20-         formatLength db "Length = ", 0
+    13 0000001F 00                 
+    14 00000020 03                          a db 3
+    15 00000021 05                          b db 5
+    16                                          
+    17                                  ;Conversie din baza 10 in baza 16
+    18                                      
+    19                                  segment code use32 class=code public 
+    20                                      start:
+    21 00000000 BE[00000000]                    mov esi, sir 
+    22 00000005 B904000000                      mov ecx, len 
+    23                                          repeta:
+    24 0000000A BB00000000                          mov ebx, 0
+    25 0000000F AC                                  lodsb 
+    26 00000010 38C3                                cmp bl, al 
+    27 00000012 7F02                                jg skip
+    28 00000014 88C3                                mov bl, al
+    29                                              skip:
+    30 00000016 AC                                      lodsb 
+    31 00000017 38C3                                    cmp bl, al 
+    32 00000019 7F02                                    jg skip2
+    33 0000001B 88C3                                    mov bl, al
+    34                                                  skip2:
+    35 0000001D AC                                          lodsb 
+    36 0000001E 38C3                                        cmp bl, al 
+    37 00000020 7F02                                        jg skip3
+    38 00000022 88C3                                        mov bl, al
+    39                                                      skip3:
+    40 00000024 AC                                              lodsb 
+    41 00000025 38C3                                            cmp bl, al 
+    42 00000027 7F02                                            jg skip4
+    43 00000029 88C3                                            mov bl, al
+    44                                                          skip4:
+    45 0000002B 88D8                                mov al, bl 
+    46 0000002D 6698                                cbw 
+    47 0000002F 98                                  cwde 
+    48 00000030 50                                  push dword eax 
+    49 00000031 68[10000000]                        push dword formatString
+    50 00000036 FF15[00000000]                      call [printf]
+    51 0000003C 83C408                              add esp, 4 * 2
+    52                                                  
+    53 0000003F E2C9                                loop repeta 
+    54                                              
+    55                                          
+    56 00000041 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    57 00000043 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

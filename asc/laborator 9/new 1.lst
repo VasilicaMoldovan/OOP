@@ -1,0 +1,28 @@
+     1                                  bits 32
+     2                                  
+     3                                  global start       
+     4                                  extern exit, scanf, fopen, fclose, fwrite             
+     5                                  import exit msvcrt.dll 
+     6                                  import scanf msvcrt.dll
+     7                                  import fopen msvcrt.dll
+     8                                  import fclose msvcrt.dll
+     9                                  import fwrite msvcrt.dll 
+    10                                                          
+    11                                  segment data use32 class=data
+    12 00000000 F4FFFFFF                    a dd -12
+    13 00000004 613D00                      readformat db "a=", 0
+    14 00000007 66697369652E747874-         outputfile db 'fisie.txt', 0
+    14 00000010 00                 
+    15 00000011 7700                        modwrite db 'w', 0
+    16 00000013 FFFFFFFF                    handle dd -1
+    17                                      
+    18                                      
+    19                                  
+    20                                  ;Se citeste de la tastatura un sir de numere in baza 10, cu semn. Sa se determine valoarea maxima din sir si sa se afiseze in fisierul max.txt (fisierul va fi creat) valoarea maxima, in baza 16.
+    21                                  segment code use32 class=code
+    22                                      start:
+    23 00000000 A1[00000000]                    mov eax, dword[a]
+    24 00000005 83C003                          add eax, 3
+    25 00000008 83C00F                          add eax, 15
+    26 0000000B 6A00                            push    dword 0   
+    27 0000000D FF15[00000000]                  call    [exit]  

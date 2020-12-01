@@ -1,0 +1,6 @@
+lala,pam pam,12-12-4739,8,nana
+ding, ding ding, 10-11-1920,13, buum
+bumbum,pam pam param,08-10-1267,19,ding ding
+aaa,bbb,12-09-1910,19,nanana
+nana,nana,19-08-1902,17,nn
+cleanup,more cleanup,01-03-1200,29,a perfect room

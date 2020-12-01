@@ -1,0 +1,63 @@
+     1                                  bits 32 global start        
+     2                                  global start 
+     3                                  extern exit, printf, scanf             
+     4                                  import exit msvcrt.dll    
+     5                                  import scanf msvcrt.dll
+     6                                  import printf msvcrt.dll 
+     7                                  
+     8                                  segment data use32 class=data public 
+     9 00000000 7B000000                    number dd 123
+    10 00000004 257800                      format db "%x", 0
+    11                                      ;readformat db "number = ", 0
+    12                                      ;format1 db "%d", 0
+    13                                          
+    14                                  ;Conversie din baza 10 in baza 16
+    15                                      
+    16                                  segment code use32 class=code public 
+    17                                      start:
+    18                                          
+    19                                          ;mov edi, 0
+    20                                          ;mov esi, number
+    21                                          ;cmp word[number], 0
+    22                                          ;jle skip
+    23                                          ;repeta:
+    24                                           ;   mov bl, 16
+    25                                            ;  mov ax, word[number]
+    26                                             ; idiv bl
+    27                                              ;mov byte[number], al 
+    28                                              ;cmp ah, 0
+    29                                          ;    jl skip2 
+    30                                           ;   cmp ah, 9
+    31                                            ;  jg skip2
+    32                                             ; add ah, '0'
+    33                                              ;mov al, ah
+    34                                          ;    stosb
+    35                                           ;   cmp word[number], 0
+    36                                            ;  jg repeta
+    37                                             ; skip2:
+    38                                              ;    sub ah, 10
+    39                                               ;   add ah, 'A'
+    40                                                ;  mov al, ah 
+    41                                                 ; stosb 
+    42                                                  ;cmp word[number], 0
+    43                                                  ;jg repeta
+    44                                          ;skip:
+    45                                          
+    46                                          ;push dword readformat
+    47                                          ;call [printf]
+    48                                          ;add esp, 4
+    49                                          
+    50                                          ;push dword number
+    51                                          ;push dword format1
+    52                                          ;call [scanf]
+    53                                          ;add esp, 4 * 2
+    54                                          
+    55 00000000 A1[00000000]                    mov eax, dword[number]
+    56                                          
+    57 00000005 50                              push eax 
+    58 00000006 68[04000000]                    push dword format
+    59 0000000B FF15[00000000]                  call [printf]
+    60 00000011 83C408                          add esp, 4 * 2
+    61                                          
+    62 00000014 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    63 00000016 FF15[00000000]                  call    [exit]       ; call exit to terminate the program
