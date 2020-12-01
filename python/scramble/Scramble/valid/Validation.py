@@ -1,0 +1,4 @@
+class GameValidator(object):
+    pass
+
+
